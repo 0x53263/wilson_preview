@@ -57,7 +57,7 @@ export default function PartnersPage() {
               />
             </div>
             
-            <div className="container mx-auto items-center">
+            <div className="container mx-auto items-center py-8 px-4 md:px-8">
               <div>
                 <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Partner With Us</h2>
               </div>
