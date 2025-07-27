@@ -169,7 +169,7 @@ export default function AboutUsPage() {
               <div className="relative w-full md:w-96 h-64 md:h-96 flex-shrink-0">
                 <Image src={selectedMember.imageUrl} alt={selectedMember.name} fill className="object-cover rounded-md" />
               </div>
-              <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 justify-center gap-2 relative flex-shrink-0">
+              <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 justify-center gap-2 relative flex-shrink-0 pl-4">
                 <div className="relative w-10 h-10 flex-shrink-0">
                   <Image src="/linkedin.png" alt="LinkedIn" fill className="object-cover rounded-md" />
                 </div>
