@@ -163,38 +163,13 @@ export default function ArticlesPage() {
       </section>
 
       <div className="relative">
-        {/* Featured Articles */}
-        {featuredArticles.length > 0 && (
-          <section className="py-16 px-4 md:px-8">
-            <div className="container mx-auto">
-              <div>
-                <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Featured News</h2>
-                <p className="text-gray-600 text-center sm:text-left text-lg sm:text-lg">Latest Articles</p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {featuredArticles.map((article) => (
-                  <Card
-                    key={article.id}
-                    imageUrl={article.imageUrl}
-                    title={article.title}
-                    description={article.description}
-                    dateTime={article.date}
-                    link={`/news/${encodeURIComponent(article.id)}`}
-                    linkText="Read More"
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
 
         {/* All Articles Section */}
-        <section className={`py-16 px-4 md:px-8 ${featuredArticles.length > 0 ? 'bg-gray-50' : ''}`}>
+        <section className={`py-16 px-4 md:px-8`}>
           <div className="container mx-auto">
             <div>
-              <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">All Articles</h2>
-              <p className="text-gray-600 text-center sm:text-left text-lg sm:text-lg">Stay Informed</p>
+              <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Featured News</h2>
+              <p className="text-gray-600 text-center sm:text-left text-lg sm:text-lg">Latest Articles</p>
             </div>
             
             {articles.length === 0 ? (
