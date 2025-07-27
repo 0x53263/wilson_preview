@@ -44,9 +44,7 @@ export default function PartnersPage() {
       {/* Partnership Information */}
       <section className="py-16 px-4 md:px-8 ">
         <div className="container mx-auto">
-          <div>
-            <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Partner With Us</h2>
-          </div>
+          
           
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="relative w-full lg:w-96 h-96 bg-gray-200 rounded-md overflow-hidden mb-8 lg:mb-0 flex-shrink-0">
@@ -60,6 +58,9 @@ export default function PartnersPage() {
             </div>
             
             <div className="flex-1">
+              <div>
+                <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Partner With Us</h2>
+              </div>
               <p className="mb-6 text-xl">
                 Partnering with Arteng offers a unique opportunity for companies seeking to innovate, stand out in competitive markets, and connect with stakeholders in the art and engineering industries. We offer a unique approach that blends creativity with technical precision and this synergy leads to the development of products, services, and experiences that are not only functional but also visually engaging.  By collaborating with Arteng professionals or initiatives, companies gain access to fresh perspectives that can reimagine how their brand communicates, operates, and evolves. In marketing and branding, Arteng driven ideas can create more immersive and memorable experiences.
               </p>
