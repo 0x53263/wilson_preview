@@ -286,7 +286,7 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-base sm:text-lg font-bold">Stephen Fletcher</h3>
-              <p className="text-sm sm:text-base text-center mb-2">Stephen's career spans more than 45 years covering a range of roles including Logistics/Transport management, Project management, Key Account management and Sales Business Development.</p>
+              <p className="text-sm sm:text-base text-center">Stephen's career spans more than 45 years covering a range of roles including Logistics/Transport management, Project management, Key Account management and Sales Business Development.</p>
             </div>
 
             <div 
