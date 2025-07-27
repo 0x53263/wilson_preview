@@ -256,69 +256,37 @@ export default function Home() {
               More Info
             </Link>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-2">
-            {/* Team members arranged by surname alphabetical order */}
-            <div 
-              className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
-            >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-3">
-                <Image 
-                  src="/wendynew.png" 
-                  alt="Wendy Bennett"
-                  fill 
-                  className="object-cover rounded-md"
-                />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold">Wendy Bennett</h3>
-              <p className="text-sm sm:text-base text-center mb-4">Wendy is a trailblazer for women in industry and has a reputation for becoming the first female in a variety of positions across many engineering fields.</p>
-            </div>
-
-            <div 
-              className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
-            >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-3">
-                <Image 
-                  src="/steve.png" 
-                  alt="Stephen Fletcher"
-                  fill 
-                  className="object-cover rounded-md"
-                />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold">Stephen Fletcher</h3>
-              <p className="text-sm sm:text-base text-center">Stephen's career spans more than 45 years covering a range of roles including Logistics/Transport management, Project management, Key Account management and Sales Business Development.</p>
-            </div>
-
-            <div 
-              className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
-            >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-3">
-                <Image 
-                  src="/jess-smith.jpg" 
-                  alt="Joan Smith"
-                  fill 
-                  className="object-cover rounded-md"
-                />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold">Joan Smith</h3>
-              <p className="text-sm sm:text-base text-center mb-4">With over 20 years of experience in business advice and guidance, Joan brings a wealth of knowledge in all areas of business support.</p>
-            </div>
+        
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {teamMembers.map((member) => (
+              <div
+                key={member.id}
+                onClick={() => setSelectedMember(member)}
+                className="cursor-pointer flex flex-col items-center bg-white rounded-lg shadow hover:shadow-lg transition-all transform hover:translate-y-[-3px] group relative h-full"
+              >
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-2 flex-shrink-0">
+                  <Image src={member.imageUrl} alt={member.name} fill className="object-cover rounded-md" />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div className="flex flex-col items-center flex-grow p-3 sm:p-4 pt-0">
+                  <h3 className="text-base sm:text-lg font-bold group-hover:text-arteng-dark transition-colors duration-300 mb-2">{member.name}</h3>
+                  <p className="text-sm sm:text-base text-center mb-4 flex-grow">{member.description}</p>
+                </div>
                 
-            <div 
-              className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
-            >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-3">
-                <Image 
-                  src="/adam.png" 
-                  alt="Adam Snelleksz"
-                  fill 
-                  className="object-cover rounded-md"
-                />
+                {/* Click indicator - Fixed position at bottom */}
+                <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-center text-arteng-dark">
+                    <span className="text-sm font-medium mr-1">Click for more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg font-bold">Adam Snelleksz</h3>
-              <p className="text-sm sm:text-base text-center mb-4">Adam has a wide and varied work history in marketing, communication and PR with over 25 years experience in many different roles and organisations.</p>
-            </div>
+            ))}
           </div>
+        
+          
         </div>
       </section>
       
