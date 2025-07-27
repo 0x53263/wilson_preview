@@ -63,15 +63,16 @@ export default function PartnersPage() {
               <p className="mb-6 text-xl">
                 Partnering with Arteng offers a unique opportunity for companies seeking to innovate, stand out in competitive markets, and connect with stakeholders in the art and engineering industries. We offer a unique approach that blends creativity with technical precision and this synergy leads to the development of products, services, and experiences that are not only functional but also visually engaging.  By collaborating with Arteng professionals or initiatives, companies gain access to fresh perspectives that can reimagine how their brand communicates, operates, and evolves. In marketing and branding, Arteng driven ideas can create more immersive and memorable experiences.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-12 justify-items-center items-center">
+                <Link href="/login">
+                  <button className="bg-arteng-dark text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-12 justify-items-center items-center">
-            <Link href="/login">
-              <button className="bg-arteng-dark text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors">
-                Contact Us
-              </button>
-            </Link>
-          </div>
+          
           
         </div>
       </section>
