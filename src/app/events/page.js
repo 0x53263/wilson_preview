@@ -329,9 +329,9 @@ export default function EventsPage() {
               </h2>
               <p className="text-gray-600 text-center sm:text-left text-lg sm:text-lg">
                 {otherEvents.length > 0
-                  ? "All Events"
+                  ? "Upcoming Events"
                   : featuredEvents.length > 0
-                  ? "All Events"
+                  ? "Upcoming Events"
                   : "Events"}
               </p>
             </div>
