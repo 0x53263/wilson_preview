@@ -277,7 +277,7 @@ export default function Home() {
             <div 
               className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
             >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-2 sm:mb-2 mt-2">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-4 sm:mb-4 mt-2">
                 <Image 
                   src="/steve.png" 
                   alt="Stephen Fletcher"
@@ -286,7 +286,7 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-base sm:text-lg font-bold">Stephen Fletcher</h3>
-              <p className="text-sm sm:text-base text-center mb-4">Stephen's career spans more than 45 years covering a range of roles including Logistics/Transport management, Project management, Key Account management and Sales Business Development.</p>
+              <p className="text-sm sm:text-base text-center mb-2">Stephen's career spans more than 45 years covering a range of roles including Logistics/Transport management, Project management, Key Account management and Sales Business Development.</p>
             </div>
 
             <div 
