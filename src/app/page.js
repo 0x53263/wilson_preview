@@ -262,7 +262,7 @@ export default function Home() {
             <div 
               className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
             >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-2">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-2 sm:mb-2 mt-2">
                 <Image 
                   src="/wendynew.png" 
                   alt="Wendy Bennett"
@@ -277,7 +277,7 @@ export default function Home() {
             <div 
               className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
             >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-4 sm:mb-4 mt-2">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-2 sm:mb-2 mt-2">
                 <Image 
                   src="/steve.png" 
                   alt="Stephen Fletcher"
@@ -292,7 +292,7 @@ export default function Home() {
             <div 
               className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
             >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-2">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-2 sm:mb-2 mt-2">
                 <Image 
                   src="/jess-smith.jpg" 
                   alt="Joan Smith"
@@ -307,7 +307,7 @@ export default function Home() {
             <div 
               className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow"
             >
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-3 sm:mb-4 mt-2">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-2 sm:mb-2 mt-2">
                 <Image 
                   src="/adam.png" 
                   alt="Adam Snelleksz"
