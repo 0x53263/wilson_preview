@@ -57,7 +57,7 @@ export default function PartnersPage() {
               />
             </div>
             
-            <div className="flex-1">
+            <div className="flex-1 items-center">
               <div>
                 <h2 className="text-4xl sm:text-4xl font-bold text-arteng-dark text-center sm:text-left">Partner With Us</h2>
               </div>
